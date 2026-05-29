@@ -3,35 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/style.css">
-    
+    <link rel="stylesheet" href="src/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Mono&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Vanilla Weather App</title>
   </head>
   <body>
-    <header>
-      <form>
-        <input type="text" placeholder="Enter a city..." />
-        <input type="submit" value="Search" />
-      </form>
-    </header>
-    <main>
-      <h1>Paris</h1>
-      <p>
-        <div>
-        Friday 21:31, clear sky
+    <div class="weather-app">
+      <header>
+        <form>
+          <input
+            type="text"
+            placeholder="Enter a city..."
+            class="weather-input"
+          />
+          <input type="submit" value="Search" class="weather-button" />
+        </form>
+      </header>
+      <main>
+        <h1>Paris</h1>
+        <div class="info">
+          <div>Friday 21:31, clear sky</div>
+          <span>Humidity: </span> <strong>56%,</strong> <span>Wind: </span
+          ><strong>2.57km/h</strong>
         </div>
-       <span>Humidity: </span> <strong>56%,</strong>
-       <span>Wind: </span><strong>2.57km/h</strong>
-      </p>
-    </main>
+      </main>
+      <br />
 
-    <footer>
-      <div>
+      <footer>
         This project was coded by <a href="">Lina Moramaga,</a> is
         <a href="">open-sourced on Github</a> and
         <a href="">hosted on Netlify</a>
-      </div>
-    </footer>
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
